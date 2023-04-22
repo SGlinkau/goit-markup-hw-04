@@ -298,7 +298,7 @@ body {
 
 .persons-list{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .persons-list-description{
