@@ -117,7 +117,8 @@ body {
   font-size: 14px;  
   font-weight: 500;
   line-height: 1.142; 
-  letter-spacing: 0.02em; 
+  letter-spacing: 0.02em;
+  fill: var(--secondary-text-color); 
 }
 
 .contacts-link:hover,
@@ -439,7 +440,7 @@ body {
   justify-content: space-between;
 }
 
-.clients-list-logo {
+.clients-list-logo a{
   display: flex;
   width: 170px;
   height: 92px;
@@ -450,8 +451,8 @@ body {
   fill: #afb1b8;
 }
 
-.clients-list-logo:hover,
-.clients-list-logo:focus {
+.clients-list-logo a:hover,
+.clients-list-logo a:focus {
   border-color: #2196f3;
   fill: #2196f3;
   cursor: pointer;
