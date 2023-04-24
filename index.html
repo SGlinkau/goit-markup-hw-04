@@ -26,10 +26,6 @@
           <li><a href="portfolio.html" class="navigation-link" id="link2">Portfolio</a></li>
           <li><a href="index.html" class="navigation-link navigation-link-last" id="link3">Kontakt</a></li>
         </ul>
-      <!-- <div class="contacts">
-        <a href="mailto:info@devstudio.com" class="contacts-link"><svg class="ico-email" width="16px" height="12px"><use href="images/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a>
-        <a href="tel:+48111111111" class="contacts-link"><svg class="ico-phone" width="10px" height="16px"><use href="images/sprite.svg#icon-phone"></use></svg>+48 111 111 111</a>
-      </div> -->
       <ul class="contacts">
         <li class="contact-item"><a href="mailto:info@devstudio.com" class="contacts-link contacts-link-mail"><svg class="ico-email" width="16px" height="12px"><use href="images/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
         <li class="contact-item"><a href="tel:+48111111111" class="contacts-link contacts-link-phone"><svg class="ico-phone" width="10px" height="16px"><use href="images/sprite.svg#icon-phone"></use></svg>+48 111 111 111</a></li>
@@ -44,7 +40,18 @@
     <section class="section order-container">
     <div class="container">
       <h1 class="container-text">efektywne rozwiązania<br/>dla Waszego biznesu</h1>
-      <button type="button" class="order-button">Zamów usługę</button>
+      <button type="button" class="order-button" data-modal-open>Zamów usługę</button>
+      <div class="backdrop is-hidden" class="data-modal">
+        <div class="modal-window">
+            <img class="niespodzianka" src="./images/Serah.png">
+            <span class="niespodzianka-text">Odnalazłeś mnie Sera! Wypije Twe zdrowie!</span>
+            <button class="close-btn" class="data-modal-close">
+            <svg class="close-btn-ico">
+                <use href="images/sprite.svg#icon-zamykacz"></use>
+             </svg>
+            </button>
+          </div>
+        </div>
     </div>
     </section>
 
@@ -218,18 +225,6 @@
   </main>
 
   <!-- STOPKA -->
-  <!-- <footer class="section footer">
-    <div class="container">
-      <section class="footer-section">
-    <a href="index.html" class="logo"><span>Web</span><span class="logo-accent-white">Studio</span></a>
-    <address class="address"> m. Warszawa, Aleje Jerozolimskie 21 <br/>
-      <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a><br/>
-      <a href="tel:+48111111111" class="contacts-link">+48 111 111 111</a>
-    </address>
-      </section>
-    </div>
-  </footer> -->
-
   <footer class="section footer">
     <div class="container"> 
     <a href="index.html" class="logo"><span>Web</span><span class="logo-accent-white">Studio</span></a>
@@ -254,6 +249,7 @@
     </div>
   </footer>
 
+  <script src="./js/modal.js"></script>
 </body>
   
 </html>
